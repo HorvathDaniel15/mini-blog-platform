@@ -8,6 +8,6 @@ if($pdo){
 }
 else{
 
-    echo "Valami gáz van...."
+    echo "Valami gáz van....";
 }
 ?>
