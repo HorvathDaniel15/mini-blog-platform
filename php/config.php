@@ -5,7 +5,7 @@ $db = 'blog';
 $user = 'root';
 $pass = '';
 
-require_once 'Database.php';
+require_once '../data/Database.php';
 $database = new Database($host, $db, $user, $pass);
 
 ?>

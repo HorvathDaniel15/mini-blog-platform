@@ -29,7 +29,7 @@ class User{
         }
 
         $stmt = $this->pdo->prepare('INSERT INTO users (username, email, password) VALUES (:username, :email, :password)');
-        if($stmt->execute(['username' => $username, 'email' => $email, 'password' => $password])){
+        if($stmt->execute(['username' => $username, 'email' => $email, 'password' => $hashed_password])){
             return 'Regisztráció sikeres!';
         }
         else{
